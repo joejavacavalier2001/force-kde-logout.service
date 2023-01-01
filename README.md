@@ -24,7 +24,7 @@ You should be able to install the dnf package "perl-Linux-Inotify2".
 ### force\_logout.pl
 /usr/local/bin
 
-When running "mv" or "cp" to move the files,   
+When running "mv" or "cp" to move or copy the files,   
 you may want use the -Z option to ensure that the files are moved or copied  
 with the proper SELinux labels in the destination directories.  
 
@@ -43,6 +43,6 @@ It should have a SELinux type label of "bin\_t" .
 
 ### Follow instructions above to place the files in the correct directories with the correct permissions and SELinux labels  
 ### Enable the service  
-systemctl enable force-kde-logout.service  
-systemctl start force-kde-logout.service  
+sudo systemctl enable force-kde-logout.service  
+sudo systemctl start force-kde-logout.service  
 
