@@ -1,0 +1,10 @@
+[Unit]
+Description=Force KDE to logout by restarting the sddm service when plasma shutdown is executed
+PartOf=sddm.service
+
+[Service]
+ExecStart=/usr/local/bin/force_logout.pl
+
+[Install]
+WantedBy=multi-user.target
+
